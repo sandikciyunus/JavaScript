@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metotları</title>
+</head>
+<body>
+    <script>
+        var metin="Ben bugün react-native programlamaya başladım. react-native çok güzel bir framework";
+        console.log(metin);
+        //Karakter uzunluğu
+        console.log(metin.length);
+        //Metinin kaçıncı yerde olduğunu bulur(İlke göre)
+        console.log(metin.indexOf("react"));
+        //Metinin kaçıncı yerde olduğunu bulur(Sona göre)
+        console.log(metin.lastIndexOf("react"));
+        //Arama yapar
+        console.log(metin.search("çok"));
+        //Parçalama işlemi yapar(Başlangıç ve bitiş dahil değil)(Eksi değerler alır sondan başlar)
+        console.log(metin.slice(0,10));
+        //Parçalama işlemi yapar
+        console.log(metin.substring(20,30));
+        //Parçalama işlemi yapar(İlk değerden diğer değere kadar alır)
+        console.log(metin.substr(20,30));
+        //Metin değiştirme
+        console.log(metin.replace(/react-native/g,"reactNative"));
+        //Karakter işlemleri
+        console.log(metin.toUpperCase());
+        console.log(metin.toLowerCase());
+        var firstName="Yunus";
+        var lastName="Sandıkçı";
+        var fullName=firstName.concat(" ",lastName);
+        console.log(fullName);
+        //CharAt o indexdeki karakteri verir
+        console.log(metin.charAt(23));
+        //Split
+        var splitText="Yunus,Hakan,Ramiz,Nermin,Ali";
+        var list=splitText.split("-");
+        console.log(list);
+
+    </script>
+</body>
+</html>

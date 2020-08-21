@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+        var araba={
+         name:"BMW",
+         model:"1.16",
+         weight:1000,
+         color:"white",
+         start(){
+             console.log("Araba çalştı");
+         },
+         drive(){
+             console.log("Araba hareket ediyor");
+         },
+         break(){
+             console.log("Araba fren yaptı");
+         },
+         stop(){
+             console.log("Araba durdu");
+         },
+         getInfo(){
+             console.log("Ad: "+araba.name)
+             console.log("Model: "+araba.model)
+             console.log("Ağırlık: "+araba.weight)
+             console.log("Renk: "+araba.color)
+         }
+        }
+
+        console.log(araba);
+
+        //Özelliklere ulaşmak
+        console.log(araba.name);
+        console.log(araba.color);
+        console.log(araba["weight"]);
+
+        //Özellikleri değiştirmek
+        araba.color="Black";
+        console.log(araba)
+        console.log(araba.getInfo())
+        console.log(araba.start())
+        console.log(araba.drive())
+        console.log(araba.break())
+        console.log(araba.stop())
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("Bu bir harici bir JS dosyasından gelen mesaj kutusudur")

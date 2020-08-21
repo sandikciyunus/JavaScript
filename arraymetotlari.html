@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Metotları</title>
+</head>
+<body>
+    <script>
+      var sinifA=["Gökhan","Defne","Berk","Soner","Handan"];
+
+      console.log(sinifA);
+
+      //length Bir arrayin uzunluğunu verir
+      console.log(sinifA.length);
+      //toString String olarak aralarına virgül koyar
+      console.log(sinifA.toString())
+      //join İstediğimiz karakteri koyarak string olarak verir
+      console.log(sinifA.join("-"))
+      //pop Bir arrayden en son elemanı çıkarır
+      var popItem=sinifA.pop();
+      console.log(popItem);
+      console.log(sinifA);
+      //push Bir diziye eleman ekler ama sona
+      sinifA.push("Yunus");
+      sinifA.push("Ramiz");
+      sinifA.push(53);
+      console.log(sinifA);  
+      //Shift kaydırma işlemi yapar(İlk baştaki elemanı çıkarır)
+      var shiftItem=sinifA.shift();
+      console.log(shiftItem);
+      console.log(sinifA);
+      //Unshift başa ekler
+      sinifA.unshift("Ali");
+      console.log(sinifA);
+      //splice Eğer 0 olursa araya ekler
+      sinifA.splice(2,2,"Can");
+      sinifA.splice(0,1);
+      console.log(sinifA);
+      //Concat iki arrayi birleştirir
+      var sinifB=["Ediz","Tayfun","Ömer","Ünsal"];
+      console.log(sinifA.concat(sinifB));
+      //Reverse bir diziyi tersine çevirir
+      console.log(sinifA.reverse());
+    </script>
+</body>
+</html>

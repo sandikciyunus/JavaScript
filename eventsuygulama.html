@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Uygulama</title>
+</head>
+<body>
+    Sayi1: <input type="text" id="sayi1">
+    Sayi2: <input type="text" id="sayi2">
+    <button onclick="Topla()">+</button>
+    <button onclick="Fark()">-</button>
+    <button onclick="Carp()">*</button>
+    <button onclick="Bol()">/</button>
+    <br>
+    <strong>Sonuç</strong>
+    <div id="result"></div>
+    <script>
+        function Topla(){
+            document.getElementById("result").innerHTML= parseInt(document.getElementById("sayi1").value)+parseInt(document.getElementById("sayi2").value)
+        }
+        function Fark(){
+            document.getElementById("result").innerHTML= parseInt(document.getElementById("sayi1").value)-parseInt(document.getElementById("sayi2").value)
+        }
+        function Carp(){
+            document.getElementById("result").innerHTML= parseInt(document.getElementById("sayi1").value)*parseInt(document.getElementById("sayi2").value)
+        }
+        function Bol(){
+            document.getElementById("result").innerHTML= parseInt(document.getElementById("sayi1").value)/parseInt(document.getElementById("sayi2").value)
+        }
+    </script>
+</body>
+</html>

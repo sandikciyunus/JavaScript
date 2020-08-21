@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Metotları</title>
+</head>
+<body>
+    <script>
+        var x=9.656;
+        var str=x.toString()+ " Yunus";
+        console.log(str);
+        var exp=x.toExponential(6);
+        console.log(exp);
+        //Virgülden sonraki (parantez içindeki değer kadar) basamağı yuvarlayarak yapar
+        var fixed=x.toFixed(1);
+        console.log(fixed);
+        var precision=x.toPrecision(3);
+        console.log(precision);
+        //Değeri number olarak getirir,diğerleri string olarak getirir
+        var valueOf=x.valueOf();
+        console.log(valueOf);
+
+    </script>
+</body>
+</html>

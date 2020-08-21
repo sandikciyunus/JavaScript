@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .area{
+            height: 100px;
+            width: 200px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+   
+    <button id="btn" onclick="document.getElementById('btn').innerHTML='Hesaplandı'">Hesapla</button>
+    <input type="text" onchange="console.log('Değişti')">
+    <select id="liste" onchange="document.getElementById('container').innerHTML=this.value;">
+        <option value="1">Ankara</option>
+        <option value="2">Bursa</option>
+        <option value="3">Ceyhan</option>
+    </select>
+
+    <div id="container">
+
+    </div>
+<div id="mouse" class="area" onmouseover="areaMouseOver()" onmouseout="areaMouseOut()">
+
+</div>
+    <script>
+        function areaMouseOver(){
+            document.getElementById("mouse").innerHTML="Mouse üzerinde";
+        }
+
+        function areaMouseOut(){
+            document.getElementById("mouse").innerHTML="Mouse üzerinde değil";
+        }
+        function test(){
+            alert("Yunus")
+        }
+    </script>
+</body>
+</html>
