@@ -1,2 +1,2 @@
 # JavaScript
-Not Defteri üzerinden ilk değişiklik!
+Not Defteri üzerinden ilk değişiklik
